@@ -1,0 +1,2 @@
+# ZastosowaniaUczeniaMaszynowego
+Projekt zaliczeniowy na przedmiot Zastosowania Uczenia Maszynowego
