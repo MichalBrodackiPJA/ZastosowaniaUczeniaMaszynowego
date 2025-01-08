@@ -3,15 +3,19 @@ Projekt zaliczeniowy na przedmiot Zastosowania Uczenia Maszynowego
  ## Zespół, opis zadania i cel projektu
  ### Zespół
 Michał Brodacki, s32038
+
 Mikołaj Cieślak, S32422
+
 Paweł de Mehlem-Barabaś, s32200
+
 Konrad Dusza, S21516 
+
 ### Cel projektu
 Celem naszego projektu, jest stworzenie sieci neuronowej zdolnej do wykrycia stronniczości politycznej na podstawie treści tweeta.
  ## Zbiór danych
 "PoliticalTweets" to zbiór danych zawierający około 190 000 tweetów amerykańskich polityków, oznaczonych według przynależności partyjnej (Demokraci lub Republikanie) oraz z etykietami sentymentu. Zawiera dane takie jak treść tweeta, identyfikator, użytkownik, data publikacji i partia polityczna. Zbiór ten jest dostępny na platformie [Hugging Face](https://huggingface.co/datasets/Jacobvs/PoliticalTweets/viewer)
  ## Etapy projektu
- 
+
   ### 1. Zebranie i Przygotowanie danych, Inżynieria Cech
 - Dane zostały pobrane z [Hugging Face](https://huggingface.co/datasets/Jacobvs/PoliticalTweets/viewer) za pomocą bibliioteki datasets.
 - Wartość partii została zakodowana (encoded) cyfrowo, ze zmiennej tekstowej

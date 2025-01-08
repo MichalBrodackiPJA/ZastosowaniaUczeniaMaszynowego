@@ -22,12 +22,19 @@ def load_hdf5(file_path):
         return {"keys": keys, "file_path": file_path}
 
 # Funkcja do testowania modelu (dummy predykcje)
-def predict_model(data):
-    return np.random.choice([0, 1], size=len(data))
+def predict_model(data, model=None):
+    # Przeprowadź predykcję za pomocą modelu
+    if model is not None:
+        # Zakładając, że model przyjmuje dane w odpowiedniej formie (np. numpy array)
+        predictions = model.predict(data)  # Przewidywanie na podstawie modelu
+        return predictions
+    else:
+        # Jeśli model jest None (np. nie znaleziono modelu w pliku HDF5), zwróć wartości losowe
+        return np.random.choice([0, 1], size=len(data))
 
 plt.style.use("https://github.com/dhaitz/matplotlib-stylesheets/raw/master/pitayasmoothie-dark.mplstyle")
 
-st.title("Projekt ZUM s21516 s32200 s32422")
+st.title("Projekt ZUM s21516 s32038 s32200 s32422")
 
 selected_tab = st.radio("Nawigacja", ["Dane", "Model HDF5", "Testowanie Modelu", "Analiza i Metryki"], horizontal=True)
 
