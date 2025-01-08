@@ -11,7 +11,7 @@ Celem naszego projektu, jest stworzenie sieci neuronowej zdolnej do wykrycia str
  ## Zbiór danych
 "PoliticalTweets" to zbiór danych zawierający około 190 000 tweetów amerykańskich polityków, oznaczonych według przynależności partyjnej (Demokraci lub Republikanie) oraz z etykietami sentymentu. Zawiera dane takie jak treść tweeta, identyfikator, użytkownik, data publikacji i partia polityczna. Zbiór ten jest dostępny na platformie [Hugging Face](https://huggingface.co/datasets/Jacobvs/PoliticalTweets/viewer)
  ## Etapy projektu
-
+ 
   ### 1. Zebranie i Przygotowanie danych, Inżynieria Cech
 - Dane zostały pobrane z [Hugging Face](https://huggingface.co/datasets/Jacobvs/PoliticalTweets/viewer) za pomocą bibliioteki datasets.
 - Wartość partii została zakodowana (encoded) cyfrowo, ze zmiennej tekstowej
