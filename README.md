@@ -25,6 +25,7 @@ Celem naszego projektu, jest stworzenie sieci neuronowej zdolnej do wykrycia str
 * Usunięto niewnoszące informacji kolumny
 * Wykonano lemanizację
 * Wykonano Tokenizację
+* Usunięto Tweety, które były samym znakiem specjalnym, po wykonaniu powyższych, stały się po prostu pustym tweetem
 * Dla lepszej reprezentacji słów w sposób wektorowy użyliśmy wektorów osadzania słów (embeddingów), a dokładnie zbiór stworzony przez Stanford University [**Glove**](https://nlp.stanford.edu/data)
   ### 2. Model Referencyjny
  - Prosta sieć neuronowa typu Feed Forward, zaweirająca 5 warstw w tym warstwę wspomnianych wyżej Embeddingów.
@@ -33,6 +34,7 @@ Celem naszego projektu, jest stworzenie sieci neuronowej zdolnej do wykrycia str
  - Oparty o architekturę transformera
 
   ### 4. Ewaluacja
+  - Zbiór został podzielony na treningowy, walidacyjny i testowy.
 - Na modelu referencyjnym osiągneliśmy wartość Dokładności równą 78%, co jest dobrym prekursorem, pobija wybranie jednej grupy w każdej okazji o ok. 27%, ale samo w sobie jest dalekie od wyniku jaki chcielibyśmy osiągnąć.
 - 
 ## Podsumowanie i Wnioski
