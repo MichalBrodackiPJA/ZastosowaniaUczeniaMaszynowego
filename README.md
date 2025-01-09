@@ -35,8 +35,10 @@ Celem naszego projektu, jest stworzenie sieci neuronowej zdolnej do wykrycia str
 
   ### 4. Ewaluacja
   - Zbiór został podzielony na treningowy, walidacyjny i testowy.
-- Na modelu referencyjnym osiągneliśmy wartość Dokładności równą 78%, co jest dobrym prekursorem, pobija wybranie jednej grupy w każdej okazji o ok. 27%, ale samo w sobie jest dalekie od wyniku jaki chcielibyśmy osiągnąć.
+- Na modelu referencyjnym osiągneliśmy wartość Dokładności równą ok. 76%, co jest dobrym prekursorem, pobija wybranie jednej grupy w każdej okazji o ok. 25%, ale samo w sobie jest dalekie od wyniku jaki chcielibyśmy osiągnąć.
 - 
 ## Podsumowanie i Wnioski
-
+* Duży zbiór danych, trzeba odpowiednio dobierać rozwiązania działające na plikach, bo w łatwy sposób stracić cały RAM
+* Warto zapisywać pracę i zbiory po każdym z kroków, żeby nie musieć powtarzać wielominótowych albo nawet kilkugodzinnych transformacji.
  ## Dashboard z wynikami
+ 
