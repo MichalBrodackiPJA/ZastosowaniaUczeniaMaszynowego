@@ -14,6 +14,7 @@ Konrad Dusza, S21516
 Celem naszego projektu, jest stworzenie sieci neuronowej zdolnej do wykrycia stronniczości politycznej na podstawie treści tweeta.
  ## Zbiór danych
 "PoliticalTweets" to zbiór danych zawierający około 190 000 tweetów amerykańskich polityków, oznaczonych według przynależności partyjnej (Demokraci lub Republikanie) oraz z etykietami sentymentu. Zawiera dane takie jak treść tweeta, identyfikator, użytkownik, data publikacji i partia polityczna. Zbiór ten jest dostępny na platformie [Hugging Face](https://huggingface.co/datasets/Jacobvs/PoliticalTweets/viewer)
+
  ## Etapy projektu
 
   ### 1. Zebranie i Przygotowanie danych, Inżynieria Cech
@@ -32,13 +33,16 @@ Celem naszego projektu, jest stworzenie sieci neuronowej zdolnej do wykrycia str
  - Prosta sieć neuronowa typu Feed Forward, zaweirająca 5 warstw w tym warstwę wspomnianych wyżej Embeddingów.
 
   ### 3. Model docelowy 
- - Oparty o architekturę transformera
+ - Oparty o architekturę transformera, model bert, fine tuned do naszych danych
 
   ### 4. Ewaluacja
-  - Zbiór został podzielony na treningowy, walidacyjny i testowy.
+- Zbiór został podzielony na treningowy, walidacyjny i testowy.
 - Na modelu referencyjnym osiągneliśmy wartość Dokładności równą ok. 76%, co jest dobrym prekursorem, pobija wybranie jednej grupy w każdej okazji o ok. 25%, ale samo w sobie jest dalekie od wyniku jaki chcielibyśmy osiągnąć.
-- 
+- Na modelu docelowym udało nam się osiągnąć 85% dokładności, jednak 
+
 ## Podsumowanie i Wnioski
 * Duży zbiór danych, trzeba odpowiednio dobierać rozwiązania działające na plikach, bo w łatwy sposób stracić cały RAM
 * Warto zapisywać pracę i zbiory po każdym z kroków, żeby nie musieć powtarzać wielominótowych albo nawet kilkugodzinnych transformacji.
- ## Dashboard z wynikami
+
+## Dashboard z wynikami
+Dashboard wykonany w steamlicie, dostępny w pliku "ZUMSreamlit" Zachęcamy do przejrzenia go
